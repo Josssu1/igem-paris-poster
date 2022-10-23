@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    line-height: 140%;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(images/Montserrat-Regular.ttf) format('truetype');
+}
+
+p {
+    font-size: 18px;
+}
+
+strong {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    display: inline;
+}
+
+h2 {
+    font-size: 2rem;
+    display: inline;
+    padding-left: 8px;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+a {
+    color: black;
+}
+
+ul {
+    margin-left: 40px;
+}
+
+ul li {
+    font-size: 18px;
+    padding-bottom: 8px;
+}
+
+.fullpage {
+    background-color: #ffe1ca;
+}
+
+.poster {
+    height: 100vh;
+    width: 65vh;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 10% 27% 4% 4% 25% 5% 5% 20%;
+    grid-template-rows: 7% 10% 3% 17% 2% 7% 13% 5% 11% 7% 5% 7%;
+}
+
+#poster_bckg {
+    margin: 3vh;
+    height: 94vh;
+    position: fixed;
+    z-index: 0;
+}
+
+#poster_dtls {
+    margin: 3vh;
+    height: 94vh;
+    position: fixed;
+    z-index: 2;
+}
+
+.biofilm {
+    margin: 3vh;
+    height: 94vh;
+    position: fixed;
+    z-index: 1;
+    opacity: 0;
+}
+
+.section {
+    padding-top: 5vh;
+    padding-right: 7.5vw;
+    margin-left: 70vh;
+    padding-left: 7.5vw;
+    min-height: 100vh;
+    max-width: 100vh;
+}
+
+.text_container {
+    margin-top: 5vh;
+}
+
+.img_container {
+    display: flex;
+    justify-content: center;
+}
+
+#group_img {
+    max-width: 60%;
+}
+
+.poster_link {
+    position: relative;
+}
+
+.link_span {
+    position:absolute; 
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+    z-index: 10;
+}
+.qblock_link {
+    grid-column: 2 / 9;
+    grid-row: 2;
+}
+
+.problem_link {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.solution_link {
+    grid-column: 5 / 8;
+    grid-row: 4;
+}
+
+.workflow_link {
+    grid-column: 4 / 9;
+    grid-row: 6 / 8;
+}
+
+.poc_link {
+    grid-column: 2;
+    grid-row: 7 / 9;
+}
+
+.results_link {
+    grid-column: 2 / 4;
+    grid-row: 10 / 13;
+}
+
+.hp_link {
+    grid-column: 4 / 7;
+    grid-row: 9 / 11;
+}
+
+.outlook_link {
+    grid-column: 8;
+    grid-row: 9 / 11;
+}
+
+.references_link {
+    grid-column: 6 / 9;
+    grid-row: 12;
+}
