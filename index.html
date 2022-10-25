@@ -68,17 +68,21 @@
         </div>
         
         <section class="section qblock" id="qblock">
-            <h1>Q BLOCK</h1>
+            <h1>QBLOCK</h1>
             <h2> - Preventing Biofilms by Blocking Bacterial Signaling</h2>
             <div class="text_container">
-                <h3>Abstract:</h3>
+                <h3>Abstract</h3>
                 <br>
                 <p>Chronic wounds are wounds that take longer than three months to heal and inflict a disproportionate burden 
                     on patients and the healthcare system. They are frequently subsequent complications of more persistent health issues. 
                     Biofilms contribute to the slower healing of around 80% of chronic wounds. Our project, QBlock, aims to limit biofilm 
                     formation by targeting bacterial communication molecules (i.e. AIPs) that contribute to biofilm formation in 
                     <em>Staphylococcus epidermidis</em> by inhibiting bacterial communication with DARPins (designed Ankyrin Repeat Proteins), 
-                    which are synthetic proteins that mimic antibodies. Through the manipulation and randomization of amino acid locations, 
+                    which are synthetic proteins that mimic antibodies. 
+                </p>
+                <br>
+                <p>
+                    Through the manipulation and randomization of amino acid locations, 
                     a DNA library of 42 DARPins was created. AlphaFold2 predicted the structure of these DARPins, and their affinity for 
                     AIP was determined experimentally by ribosomal display. In control tests, a DARPin with a known sequence was used to 
                     bind GFP. Not only did structural predictions and simulations validate a strong binding with AIP, but they also 
@@ -89,18 +93,14 @@
                 </p>
                 <br>
                 <br>
-                <h3>Team:</h3>
+                <h3>Team</h3>
                 <br>
                 <div class="img_container">
-                    <img id="group_img" src="images/group.jpg" alt="">
+                    <img class="image" src="images/group.jpg" alt="">
                 </div>
                 <br>
-                <p>
-                    From left to right: 
-                </p>
-                <br>
-                <p>
-                    Mari Keskiivari, Lilith Heiland, Diogo Dias, Joose Lankia, Melissa Hendrén, Amna Gul, 
+                <p class="caption">
+                    Figure 1: Our team from left to right: Mari Keskiivari, Lilith Heiland, Diogo Dias, Joose Lankia, Melissa Hendrén, Amna Gul, 
                     Hanna Nebelung, Veera Kurki, Anniina Könönen, Zsófia Hesketh.
                 </p>
             </div>
@@ -110,21 +110,48 @@
             <h1>The Problem of Biofilms</h1>
             <div class="text_container">
                 <p>
-                    <strong>Chronic wounds</strong> are wounds that take longer than three months to heal and inflict a disproportionate burden on patients 
-                    and the healthcare system. They are frequently subsequent complications of more persistent health issues.
+                    Chronic wounds are a burden for both the patient and the healthcare system as a whole. They are frequently caused 
+                    by other underlying chronic diseases and are therefore known as a "silent epidemic" (Benitez et al., 2019). The biggest 
+                    difference between chronic wounds and other wounds is that they have a significantly reduced healing time, and can stay 
+                    open for three months or even more.
                 </p>
                 <br>
-                <p>
-                    <strong>Biofilms</strong>, which are structured communities of microorganisms, are present in around <strong>80%</strong> of chronic wounds and impede 
-                    their recovery. In the early stage bacteria attach to a surface - in this case, the open wound site - and reproduce, 
-                    forming microcolonies.
+                <div class="img_container">
+                    <img class="image" src="images/acute_vs_chronic_wound.png" alt="">
+                </div>
+                <p class="caption">
+                    Figure 2: Depicting pathological activities comparing an acute and a chronic wound.
                 </p>
                 <br>
+                <br>
                 <p>
-                    They then communicate with other bacteria via a process called <strong>quorum sensing</strong>, where small <strong>auto-inducer peptides (AIPs)</strong> are released 
-                    to attract more and more bacteria to the same site. This allows them to know their population density, which is very important for 
+                    <strong>Biofilms</strong>, which are structured communities of microorganisms, are present in around <strong>80%</strong> of chronic 
+                    wounds (Malone et al., 2017) and impede their recovery (IWII, 2022). In the early stage bacteria attach to a surface - in this case, 
+                    the open wound site - and reproduce, forming microcolonies.
+                </p>
+                <br>
+                <div class="img_container">
+                    <img class="image" src="images/biofilm_img.png" alt="">
+                </div>
+                <p class="caption">
+                    Figure 3: Biofilm forming on a wound.
+                </p>
+                <br>
+                <br>
+                <p>
+                    They then communicate with other bacteria via a process called <strong>quorum sensing</strong>, where small <strong>auto-inducer peptides (AIPs)</strong> (in the case of <em>S. Epidermidis</em>) are released 
+                    to attract more and more bacteria to the same site (Madigan et al., 2009; Olson et al., 2014). This allows them to know their population density, which is very important for 
                     the onset of infection for bacteria.
                 </p>
+                <br>
+                <div class="img_container">
+                    <img class="image" src="images/qs_mechanism.png" alt="">
+                </div>
+                <p class="caption">
+                    Figure 4: Quorum sensing mechanism of Staphylococcus epidermidis (S. epidermidis) that is functioning via the peptide 
+                    based AIP system.
+                </p>
+                <br>
                 <br>
                 <p>
                     The maturing biofilm now forms a polysaccharide matrix, in which the colonising bacteria can become dormant. 
@@ -133,9 +160,9 @@
                 </p>
                 <br>
                 <p>
-                    <strong>1 - 2 % of the global population</strong> experience chronic wounds during their lifetime, while <strong>up to 50 % of hospital beds in 
+                    In affluent nations, chronic wounds affect an estimated <strong>1% to 2%</strong> of the population (Järbrink et al., 2016), while <strong>up to 50 % of acute hospital beds in 
                     Europe</strong> are taken up by patients that suffer from either acute or chronic wounds - though the greater proportion is occupied 
-                    by the latter. Increasing rates of obesity, diabetes and an ageing population are the main contributors to their growing 
+                    by the latter (Moore et al., 2014). Increasing rates of obesity, diabetes and an ageing population are the main contributors to their growing 
                     prevalence and burden. It is clear that this is a huge economical problem, not to mention the distress experienced by the patients.
                 </p>
             </div>
@@ -146,9 +173,17 @@
             <div class="text_container">
                 <p>
                     The Aalto-Helsinki iGEM 2022 team plans to block the process of quorum sensing via <strong>DARPins</strong> (designed ankyrin repeat proteins), 
-                    which are proteins that mimic antibodies but that possess more favourable properties. Thanks to their small size, 
+                    which are peptides that resemble antibodies but that possess more favourable properties. Thanks to their small size, 
                     DARPins should be able to penetrate the biofilm’s matrix and bind to the molecules that are used in quorum sensing of <em>Staphylococcus epidermidis</em> (i.e. AIPs).
                 </p> 
+                <br>
+                <div class="img_container">
+                    <img class="image" src="images/darpin_docking.png" alt="">
+                </div>
+                <p class="caption">
+                    Figure 5: 3D structure of a DARPin molecule (green) binding to AIP molecule (blue).
+                </p>
+                <br>
                 <br>
                 <p>
                     Once DARPins successfully bind to AIPs, these small peptides can no longer be used for signalling to other bacteria, 
@@ -173,6 +208,17 @@
                     the target AIP1 peptide, which in turn will inhibit the quorum sensing mechanism of S. epidermidis.
                 </p>
                 <br>
+                <div class="img_container">
+                    <img class="image" src="images/darpin_sequence.png" alt="">
+                </div>
+                <p class="caption">
+                    Figure 6: Amino acid sequence of single DARPin capping and internal repeats. Framework and fixed positions are in black, 
+                    bridge amino acids in blue, and randomized positions are marked with a specific colour. A. N-terminal capping repeat 
+                    (or N-cap). B. Three internal repeat modules are chosen (or IRs) which makes our DARPins in the form of N3C. C. 
+                    C-terminal capping repeat (or C-cap).
+                </p>
+                <br>
+                <br>
                 <p>
                     Our construct was based on three key settings: (1) previous and current state-of-the-art scientific research on designed 
                     DARPin molecules, (2) most successful DARPins that bound to their intended targets, and (3) most successful randomised 
@@ -191,6 +237,14 @@
                     to be purified via gel extraction.
                 </p>
                 <br>
+                <div class="img_container">
+                    <img class="image" src="images/darpin_synthetization.png" alt="">
+                </div>
+                <p class="caption">
+                    Figure 7: Synthesising our own DARPins using the BioXp 3250 machine. 
+                </p>
+                <br>
+                <br>
                 <p>
                     As we wanted to prove that the selection method could be successful for our AIP binding DARPins, we firstly wanted 
                     to prove the method with a known protein-protein binding. We chose GFP binding DARPins as our test targeting protein, 
@@ -207,9 +261,23 @@
                 <h3>
                     3. Affinity selection + NGS analysis
                 </h3>
+                <br>
                 <p>
-
+                    The idea of coupling next-generation sequencing (NGS) analysis to the ribosome display method is to confirm the 
+                    success of our control molecule (i.e., the GFP DARPin) (Hansen et al., 2017) and to effectively identify our DARPin 
+                    binding molecules against the AIP peptide. In addition, we aim to analyse such DARPin molecules at the RNA level for 
+                    the identification of the most prominent amino acids at the randomised positions as well as potential patterns that 
+                    can lead to the binding effect.
                 </p>
+                <br>
+                <div class="img_container">
+                    <img class="image" src="images/GFP_DARPIN_sequence_logo.png" alt="">
+                </div>
+                <p class="caption">
+                    Figure 8: GFP-binding DARPin and retrieved sequencing data's sequence logos
+                </p>
+                <br>
+                <br>
             </div>
         </section>
 
@@ -246,10 +314,18 @@
                     produce the needed membrane proteins and internal signalling proteins, to bind the signalling molecules (AIP's) 
                     and then give an output to show that the cell has received the information of the binding. 
                     For this part of the project we took inspiration from a last year's iGEM team (Team IISER, Kolkata, 2021 iGEM team), 
-                    who had built a bioreporter with the parts aimed to sense signalling molecules released from S. aureus bacteria. 
+                    who had built a bioreporter with the parts aimed to sense signalling molecules released from <em>S. Aureus</em> bacteria. 
                     They had successful results, which made us confident that we can build a similar bioreporter but aimed for 
                     <em>S. epidermidis.</em>
                 </p>
+                <div class="img_container">
+                    <img style="width: 90%;" src="images/bioreporter.png" alt="">
+                </div>
+                <p class="caption">
+                    Figure 9: Schematic picture of bioreporter
+                </p>
+                <br>
+                <br>
             </div>
         </section>
 
@@ -265,6 +341,23 @@
                     We tested the baseline signal of GFP from the bioreporter, however, due to time restrictions, we did not have time to 
                     test the bioreporter with DARPins included.
                 </p>
+                <br>
+                <div class="img_container">
+                    <img class="image" src="images/darpin_gel2.png" alt="">
+                </div>
+                <p class="caption">
+                    Figure 10: SDS-page gel image of GFP-DARPin from both pellet and supernatant
+                </p>
+                <br>
+                <br>
+                <div class="img_container">
+                    <img class="image" src="images/darpin_gel.png" alt="">
+                </div>
+                <p class="caption">
+                    Figure 11: 2 % agarose gel of the DARPins (D1-D32) synthesised with the BioXp machine from Codex DNA. The ladder [L] used is 
+                    the 1 kb Plus DNA ladder with the base pairs [bp] indicated on the left side.
+                </p>
+                <br>
                 <br>
                 <h3>
                     Wet lab achievements:
@@ -286,8 +379,7 @@
                 <br>
                 <ul>
                     <li>Designed successfully DARPins</li>
-                    <li>Modelled DARPin-AIP binding <em>in silico</em> via CABS-dock</li>
-                    <li>Modelled DARPin-AIP binding <em>in silico</em> via Mdock-PEP</li>
+                    <li>Modelled DARPin-AIP binding <em>in silico</em> via CABS-dock and Mdock-PEP</li>
                     <li>Compared modelling of DARPin-AIP binding</li>
                     <li>Modelled diffusion and binding of DARPin and AIP in biofilm</li>
                 </ul>                
@@ -304,9 +396,7 @@
                 </p>
                 <br>
                 <p>
-                    <a href="https://2022.igem.wiki/aalto-helsinki/human-practices">In our wiki</a>, we have documented the steps we took 
-                    during our project to evaluate the impact of our solution and how we've adjusted it based on the discussions 
-                    we've had and the research we've done. <strong>Below, a summary of the human practices we did, that helped us shape and refine 
+                    <strong>Below, a summary of the human practices we did, that helped us shape and refine 
                     our solution:</strong>
                 </p>
                 <br>
@@ -314,7 +404,7 @@
                     <li>Project ideation with our PIs.</li>
                     <li>Got ecouraged to look into alternatives to antibodies by Prof. Alexander Frey, thus DARPins becoming a core 
                         component of our project.</li>
-                    <li>Based on the discussion with Dr. Christopher Jonkergrouw, we decided to focus on the signalling molecules AIPs 
+                    <li>Based on the discussion with Dr. Christopher Jonkergouw, we decided to focus on the signalling molecules AIPs 
                         instead of the receptor proteins to prevent fast-track evolution.</li>
                     <li>Got tips from Jouni Lounasmaa for project management.</li>
                     <li>Got feedback from wound healing researcher, Dr. Esko Kankuri for our solution's relevance, ideation and expected 
@@ -327,6 +417,16 @@
                     <li>Received coaching for presenting from The Science Basement staff.</li>
                 </ul>
                 <br>
+                <div class="img_container">
+                    <img style="width: 45%; padding: 10px;" src="images/human_practices_esko.png" alt="">
+                    <img style="width: 45%; padding: 10px;" src="images/human_practices_clinicians.png" alt="">
+                </div>
+                <p class="caption">
+                    Figures 12 and 13: Talking to experts and clinicians gave us valuable insight on the issues caused by the biofilm, as well as 
+                    understanding the patient side too.
+                </p>
+                <br>
+                <br>
                 <p>
                     Our initial plan was to interview patients from the wound clinic, but unfortunately because of limitations we 
                     weren't able to contact any patients in the timeframe we had. Instead we decided to look for patient experiences 
@@ -334,22 +434,126 @@
                     chronic wound.
                 </p>
                 <br>
-                <p>
+                <!--<p>
                     We have measured the impact of our project through thorough literacy research, the feedback of professionals and 
                     the stories from patients themselves. We have concluded that our project does have a positive impact on the world. 
                     Additionally, the discussions we've had have impacted and steered our project development through the whole process. 
                     <strong>We have listened to the feedback we have gotten and tried to change our project for the better.</strong>
-                </p>
+                </p>-->
             </div>
         </section>
 
         <section class="section outlook" id="outlook">
             <h1>The Outlook</h1>
+            <div class="text_container">
+                <p>
+                    In order to implement QBlock in the real world, we still have to take some steps. We have now identified potential 
+                    candidate DARPins as the basis for QBlock. The first steps that we would need to take is to confirm that this is indeed 
+                    the best performing DARPin out of our original 10^12 library. This can be done by increasing the size of the library, 
+                    repeating the experiment and checking whether a DARPin with a higher affinity towards the target AIP exists.
+                </p>
+                <br>
+                <p>
+                    We were able to show that our bioreporter is inducible with AIP and maybe could test it against the DARPIn. However, 
+                    the inducible promoter used for GFP seemed to be leaky, therefore, improvement of the expression system is still needed. 
+                    We can also show the effectiveness of the DARPin in other ways than testing it with a bioreporter. In order to check that 
+                    the DARPin is inhibiting biofilm formation, we should continue with our planned in vitro model and check QBlock's effect 
+                    on <em>S. epidermidis</em>. This was not feasible in this project due to time constraints, but should be performed in future to 
+                    measure biofilm formation.
+                </p>
+                <br>
+                <p>
+                    To be able to eventually utilise QBlock in a wound care setting, we have to finalise a suitable delivery mechanism first.
+                    A possible admininstration method we looked into was a hydrogel dressing. The admininstration method and the safety of our DARPin 
+                    product would need to be tested preclinically and clinically.
+                </p>
+                <br>
+                <div class="img_container">
+                    <img class="image" src="images/therapy_develpomnent_pipeline.png" alt="">
+                </div>
+                <p class="caption">
+                    Figure 14: Typical stages from drug or medical device discovery to clinical trials (created with Biorender.com)
+                </p>
+                <br>
+                <br>
+            </div>
 
         </section>
 
         <section class="section references" id="references">
             <h1>References and Acknowledgements</h1>
+            <div class="text_container">
+                <ol>
+                    <li>Benitez, Sarah Cristina Castillo and Duran, Rosa Alduey and Matos-Ruiz, Pilar and Heng, Madalene CY and Vander Laan, Thomas L, 2019
+                        <br>
+                        A Disruptive Treatment to Prevent Amputation and Enhance Limb Salvage in an Elderly Patient
+                        <br>
+                        Journal of Cosmetics, Dermatological Sciences and Applications, 9(2), pp.129-154.</li>
+                    <li>Malone, M., Bjarnsholt, T., McBain, A.J., James, G.A., Stoodley, P., Leaper, D., Tachi, M., Schultz, G., Swanson, T. and Wolcott, R.D., 2017
+                        <br> 
+                        The prevalence of biofilms in chronic wounds: a systematic review and meta-analysis of published data
+                        <br> 
+                        Journal of wound care, 26(1), pp.20-25</li>
+                    <li>International Wound Infection Institute (IWII) Wound Infection in Clinical Practice. 2022
+                        <br>
+                        Wounds International</li>
+                    <li>Madigan, M.T., Martinko, J.M., Dunlap, P.V. and Clark, D.P., 2009
+                        <br>
+                        Brock-Biology of Microorganisms
+                        <br>
+                        12th International Edition</li>
+                    <li>Olson, M.E., Todd, D.A., Schaeffer, C.R., Paharik, A.E., Van Dyke, M.J., Büttner, H., Dunman, P.M., Rohde, H., Cech, N.B., Fey, P.D. and Horswill, A.R., 2014
+                        <br>
+                        Staphylococcus epidermidis agr quorum-sensing system: signal identification, cross talk, and importance in colonization
+                        <br>
+                        Journal of bacteriology, 196(19), pp.3482-3493</li>
+                    <li>Järbrink, K., Ni, G., Sönnergren, H., Schmidtchen, A., Pang, C., Bajpai, R. and Car, J., 2016
+                        <br>
+                        Prevalence and incidence of chronic wounds and related complications: a protocol for a systematic review
+                        <br>
+                        Systematic reviews, 5(1), pp.1-6</li>
+                    <li>Moore, Z., Butcher, G., Corbett, L.Q., McGuiness, W., Snyder, R.J. and van Acker, K., 2014
+                        <br>
+                        Exploring the concept of a team approach to wound care: Managing wounds as a team
+                        <br>
+                        Journal of Wound Care, 23, pp.S1-S38</li>
+                    <li>Hansen, S., Stüber, J. C., Ernst, P., Koch, A., Bojar, D., Batyuk, A., & Plückthun, A. (2017)
+                        <br>
+                        Design and applications of a clamp for Green Fluorescent Protein with picomolar affinity
+                        <br>
+                        Scientific reports, 7(1), 1-16</li>   
+                </ol>
+                <br>
+                <br>
+                <p>
+                    We want to thank our PIs and advisors <strong>Heli Viskari, Markus Linder, Sesilja Aranko and Ville Paavilainen</strong> and our 
+                    mentors <strong>Sami Jalil, Juuso Taskinen, Ilse Kaaja and Rishi Banerjee</strong> for the invaluable support along the whole project.
+                </p>
+                <br>
+                <p>
+                    Thanks to <strong>Mikael Hytti, Ulla Åhman, Norman Adlund, Kah Ying Ng and Tejas Tomvanshi</strong> for your technical support in the lab. 
+                </p>
+                <br>
+                <p>
+                    Also thanks to <strong>Christopher Jonkergouw, Alexander Frey, Lars Paulin and Anja Paatero</strong> for giving your knowledge 
+                    available to us. Big thanks also to <strong>Dr. Esko Kankuri, Heli Lagus and Milla Kallio</strong> and other Wound Center staff for giving us 
+                    valuable knowledge about the problem and helping us with our promotion video. Thanks to <strong>Jouni Lounasmaa</strong> entrepreneurial 
+                    advice and thanks to the people at <strong>Science Basement</strong> for the presentation coaching. 
+                </p>
+                <br>
+                <p>
+                    Last but not least, big thanks to our academic and private sponsors!
+                </p>
+                <br>
+                <div class="img_container">
+                    <img style="width: 100%;" src="images/sponsors.png" alt="">
+                </div>
+                <p class="caption">
+                    
+                </p>
+                <br>
+                <br>
+            </div>
 
         </section>
     </div>

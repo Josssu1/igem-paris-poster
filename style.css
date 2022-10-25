@@ -41,7 +41,11 @@ ul {
     margin-left: 40px;
 }
 
-ul li {
+ol {
+    margin-left: 40px;
+}
+
+li {
     font-size: 18px;
     padding-bottom: 8px;
 }
@@ -97,6 +101,13 @@ ul li {
 .img_container {
     display: flex;
     justify-content: center;
+}
+
+.caption {
+    padding-top: 8px;
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
 }
 
 #group_img {
@@ -158,4 +169,8 @@ ul li {
 .references_link {
     grid-column: 6 / 9;
     grid-row: 12;
+}
+
+.image {
+    width: 60%;
 }
